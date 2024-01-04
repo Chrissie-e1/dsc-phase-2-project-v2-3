@@ -201,26 +201,8 @@ g. During wrangling, the columns \'zipcode\',\'id\', \'lat\', \'long\',
 \'yr_renovated\', \'yr_built\' were observed to be insignificant and
 consequently were dropped.
 
-**Were there any data transformed in the pre-preliminary phase?**\
-While most of the variables were deemed fit for modeling, some data had
-to be transformed for healthy consumption. Some data had to be
-transformed to suitable data types. Additional columns were included
-forming new features. For instance, a column, total_space, was created
-to include sqft_living and sqft_lot variables. An additional season
-column was added to analyse how housing prices across the different
-seasons. The columns were then retained along with the transformed data.
-
-The data was then check for correlation visually and statistically to
-determined relevant columns for use in modelling. When checking for
-correlation, variables than were greater than .5 were considered more
-correlated to price (with a correlation of 1.0). These variables were
-retained for machine learning and modelling through a multiple
-regression analysis. Additionally, the selected variables were checked
-for skewness. All the variables were skewed and the data was
-standardized to normal distribution. The outliers were checked and
-removed to make the regression model for effective. Lastly, variables
-with categorical data were converted to dummy variables and the data
-added to the dataframe
+*While most of the variables were deemed fit for modeling, some data had to be transformed for healthy consumption. Some data had to be transformed to suitable data types. Additional columns were included forming new features. For instance, a column, total_space, was created to include sqft_living and sqft_lot variables. An additional season column was added to analyse how housing prices across the different seasons. The columns were then retained along with the transformed data.
+The data was then check for correlation visually and statistically to determined relevant columns for use in modelling. When checking for correlation, variables than were greater than .5 were considered more correlated to price (with a correlation of 1.0). These variables were retained for machine learning and modelling through a multiple regression analysis. Additionally, the selected variables were checked for skewness. All the variables were skewed and the data was standardized to normal distribution. The outliers were checked and removed to make the regression model for effective. Lastly, variables with categorical data were converted to dummy variables and the data added to the dataframe
 
 **Preliminary Procedures**
 
@@ -229,13 +211,9 @@ added to the dataframe
 
 -   Correlation was checked to establish relationship between variables
 
--   The aim of the preliminary procedures was to investigate the
-    relationship between property attributes and prices. The
-    relationship between selected variables is summarized in the heat
-    map and graphs seen below.
+-   The aim of the preliminary procedures was to investigate the relationship between property attributes and prices. The relationship between selected variables is summarized in the heat map and graphs seen below.
 
--   Correlation heatmap shows a summary of the correlation between the
-    different variables in the data set in relation to price
+-   Correlation heatmap shows a summary of the correlation between the different variables in the data set in relation to price
 
 ![](vertopal_88e3edc994fc4582bda452cfb0757fc0/media/image2.png){width="6.5in"
 height="4.101388888888889in"}
@@ -279,10 +257,8 @@ The bathroom variable showed an abnormal
 
 a.  Baseline Model
 
-The model composed of a simple linear regression the based on price vs
-sqft_living.\
-sqft_living showed the highest and strongest correlation hence fit to
-create a baseline model for the multiple linear regression
+The model composed of a simple linear regression the based on price vssqft_living.\
+sqft_living showed the highest and strongest correlation hence fit to create a baseline model for the multiple linear regression
 
 ![](vertopal_88e3edc994fc4582bda452cfb0757fc0/media/image11.png){width="6.5in"
 height="1.4097222222222223in"}
@@ -303,35 +279,24 @@ height="2.2472222222222222in"}
 ![](vertopal_88e3edc994fc4582bda452cfb0757fc0/media/image15.png){width="6.5in"
 height="4.975694444444445in"}
 
-The final model accounts to 50.6% of the variance in price and it's a
-good model for use. The mean absolute error is 0.29 providing more
-evidences that the model is best and fit for use since it is a better
-improvement of the first model. The model strongly supports alternative
-and null hypothesis. We found that the p\<0.05 which insists that we
-reject the Null Hypothesis that Price of house are independent.
+The final model accounts to 50.6% of the variance in price and it’s a good model for use. The mean absolute error is 0.29 providing more evidences that the model is best and fit for use since it is a better improvement of the first model. The model strongly supports alternative and null hypothesis. We found that the p<0.05 which insists that we reject the Null Hypothesis that Price of house are independent. 
 
 **RECOMMENDATION**
 
-It is highly recommended that the audience focus on the attributes of
-\'sqft_living\', \'bathrooms\', \'sqft_above\', \'sqft_living15', and
-\'view' when deciding on prices of houses. These variables are the key
-predictors of house prices in King County. The variables showed strong
-positive correlations suggesting that an improvement in the variables
-increases prices.
-
-Model Selection. When choosing a model, it\'s important to balance
-complexity and performance. Depending on your objectives, you might opt
-for a simpler model with fewer features, especially if interpretability
-is a key priority.
+It is highly recommended that the audience focus on the attributes of 'sqft_living', 'bathrooms', 'sqft_above', 'sqft_living15’, and 'view’ when deciding on prices of houses. These variables are the key predictors of house prices in King County. The variables showed strong positive correlations suggesting that an improvement in the variables increases prices. 
+Model Selection. When choosing a model, it's important to balance complexity and performance. Depending on your objectives, you might opt for a simpler model with fewer features, especially if interpretability is a key priority.
 
 **LIMITATIONS**
 
-The choice of variables included in the models may not be exhaustive.
-There could be other important factors influencing house prices that are
-not considered in the current models.
+The choice of variables included in the models may not be exhaustive. There could be other important factors influencing house prices that are not considered in the current models. 
 
 **CONCLUSION**
 
-House properties influence prices of houses. The model suggests
-\'sqft_living\', \'bathrooms\', \'sqft_above\', \'sqft_living15', and
-\'view' influence prices of houses in the county.
+House properties influence prices of houses. The model suggests 'sqft_living', 'bathrooms', 'sqft_above', 'sqft_living15’, and 'view’ influence prices of houses in the county. 
+
+**REPOSITORY STRUCTURE**
+• Data: Contains the raw dataset (kc_house_data.csv) used for analysis.
+• Notebooks: Includes Jupyter Notebooks detailing the entire analysis process.
+• README.md: Provides an overview of the project, business problems explored, data understanding, analysis, conclusions, and repository structure.
+• Presentation: Contains the presentation slides in pdf detailing the project findings
+
